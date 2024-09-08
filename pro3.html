@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/pro.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+  <title>Briffs</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <button id="menu1">
+        <img class="menu1" src="img/menu.png" alt="">
+      </button>
+
+      <a href="index.html">
+        <img class="logo" src="img/logo.png" alt="">
+      </a>
+
+      <a href="form.html">
+        <img class="user" src="img/user.png" alt="">
+        <div class="preuser"></div>
+      </a>
+
+      <input class="search" type="text" placeholder="Buscar">
+      <img class="sea" src="img/search.png" alt="">
+
+      <div class="container-icon">
+        <div class="container-cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="White"
+            class="icon-cart">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+          </svg>
+          <div class="count-products">
+            <span id="contador-productos">0</span>
+          </div>
+        </div>
+
+      </div>
+  </header>
+
+  <ul id="menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="shop.html">Tienda</a></li>
+    <li><a href="mision.html">Sobre nosostros</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li class="lil"><a style="color: #101010e0;" href="#">.</a></li>
+    <li class="lil"><a style="color: #101010e0;" href="#">.</a></li>
+    <li class="lil"><a style="color: #101010e0;" href="#">.</a></li>
+  </ul>
+
+  <a href="shop3.html">
+    <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE90lEQVR4nO2dyY9VRRTGfzbd6P9gt+AUNygLNppolCHEvUMcEo1bh2iMESMORBQwxoUrTRQC7ZCOvWCnC0xcOKCGBWpQWWDULdJBlMZHax9Sptp05D25Qw2nhi/5Nu/163vrfPfWqTp16hRUVFRUVFTki0uAtcCdwDPAu8BB4BvgGDAHDCzn7Gfmu8+Bd+xv7rD/4+LYjUkR48A6YAtwADgDiCMuAIeAXcCmKtBojAEbgX3AKYcCXIjmWnuBDfYeiscUsAP4JaAIMoLmHl4CJktU5XLgNcfdkTjiWWAauIZChDBO+S8FhpcG/sYMClaTISaAR4HfFRhaWnIe2JbTAMCMZo4qMKz05A/W+Sc9fDVP1t8KjCmOuGh930oSHD19psCA4olfWX+YBG61M2bJnCeAzSjHvXbYKIVwAXgApXgkM38hLfzKEyjDCwoMI5FpBjAq8JACY4gSPh5bjHsK7abkf7qv+2OOpkpy4NKQgxijLzPP+FVB40Up50LGwCYyn/SJI34Rakb/qoLGSiJ8OUSgcFFBQyURGlut9yWGef2+V9BISYxHfYXun1XQOEmUT7kWYxXwh4KGSaI87To6/J6CRkniNOv0TnCljWrGbpAkTpNHcJULQd5S0BjJhG+4mJEPFDREMqEJNV3WR5AdChqx3yavGX6g4H768sWuYowpyCicsckSS5hUYNC+/Klr2upGZWIsdaGSATvN3vcpE2Pcdl+SAfd0CZOcUibGjAJDuuJvNmreGDdFutH3h4ixwubYSma8oY0gz1Ux8C3I1jaCfFzfDHwL8lGbPX1/BhSkBJ8hQ3imaVh+bcCbKslnyBCuaSKI2e1axSCIDW7T4tBLfzOkjWM3W86qGOhZI/GZ4lOqA5cR/KSJIN96unjtpjjPJl83EcREI6sYBHlDfmwiiOsU0f1DuqkUMelhPeZ4kwu7XiE0IfNcMOXYNmYCHlyQXkuWyhBFkNpljRbjwxhdlg+nPjtiIvi2h2tJbk7d17C3ikK3Ye+nHp+IOjGk/cTQdzypvin8awuTt6Aiy72Kwj92eFpT+L2KQrPwe8gFqtJFWdN0CTdk6b1SHf18m51VoZMcSnxTDqA8DWi2MFEaOfQl3BjpJmcLEuX6NoKYNMeaSoo3MU52WZLYG/Hpmck82Xo3HbAh8k3PDBElh/0hhjd3EcRsKvlZmShTCozZlyaafhEZbGmbymRL23Z6wBiibvrE6QrhpfTEmwqeKsmEr+MAV9TCAbjaEu2svEZpObfigWYa4Qwmc6QWn6FX8RnnJf+2KnjKJFE+iQeYnbnfKWicJMYjbXfctp291xJ/NBbD1DS+Bc94RcFTJ4lwJwEw7jlVSDLhQZ9d1X9RCylzwULKpixiUJhy2rXUOOeJMbDldKPgrlqMn+VimAHPfUTGgwr6a1HCx1CCbQqMIZH5PMrwcKHd16LGI4+WH/BytjAHfjfKsbmQs0WOxxxNdZmn5Dx5/DKlgyVLOHp1goSxPpNjLo6ECBSGQsrHd5/O7fju5VhlK+CkUNx/wS675lT4YCRW27445D4UaTGUNQ/N1RSISVsLPXaGpNiMwu0u8qZywJh1mHtskeGQWei7ba5tp3rsJWAFsA7YYncZzTv2C4eAXXZSF+ScwdywErgOuN1mvkzbSedh4Jg9aH5gecJ+dtj+zbTdqWR+e20VoKKioqKCjHEOmhdeEDbmgzAAAAAASUVORK5CYII=">
+  </a>
+
+  <div class="container-title">NFL</div>
+
+  <main>
+    <div class="container-img">
+        <img srcset="//www.neweracap.com/cdn/shop/files/70818847_59FIFTY_NFLPROBOWL_NFLLOGCC_WHT_3QL.jpg?v=1706728024&amp;width=493 493w,
+          //www.neweracap.com/cdn/shop/files/70818847_59FIFTY_NFLPROBOWL_NFLLOGCC_WHT_3QL.jpg?v=1706728024&amp;width=600 600w,
+          //www.neweracap.com/cdn/shop/files/70818847_59FIFTY_NFLPROBOWL_NFLLOGCC_WHT_3QL.jpg?v=1706728024&amp;width=713 713w,
+          //www.neweracap.com/cdn/shop/files/70818847_59FIFTY_NFLPROBOWL_NFLLOGCC_WHT_3QL.jpg?v=1706728024&amp;width=823 823w,
+          //www.neweracap.com/cdn/shop/files/70818847_59FIFTY_NFLPROBOWL_NFLLOGCC_WHT_3QL.jpg?v=1706728024&amp;width=990 990w,
+          //www.neweracap.com/cdn/shop/files/70818847_59FIFTY_NFLPROBOWL_NFLLOGCC_WHT_3QL.jpg?v=1706728024&amp;width=1100 1100w,
+          //www.neweracap.com/cdn/shop/files/70818847_59FIFTY_NFLPROBOWL_NFLLOGCC_WHT_3QL.jpg?v=1706728024&amp;width=1206 1206w,
+          //www.neweracap.com/cdn/shop/files/70818847_59FIFTY_NFLPROBOWL_NFLLOGCC_WHT_3QL.jpg?v=1706728024&amp;width=1346 1346w,
+          //www.neweracap.com/cdn/shop/files/70818847_59FIFTY_NFLPROBOWL_NFLLOGCC_WHT_3QL.jpg?v=1706728024&amp;width=1426 1426w,
+          //www.neweracap.com/cdn/shop/files/70818847_59FIFTY_NFLPROBOWL_NFLLOGCC_WHT_3QL.jpg?v=1706728024&amp;width=1646 1646w,
+          
+          " src="//www.neweracap.com/cdn/shop/files/70818847_59FIFTY_NFLPROBOWL_NFLLOGCC_WHT_3QL.jpg?v=1706728024&amp;width=1946" sizes="(min-width: 1920px) 1001px, (min-width: 990px) calc(55.0vw - 10rem), (min-width: 768px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)" width="973" height="973" alt="New Era Cap">
+    </div>
+    <div class="container-info-product">
+      <div class="container-price">
+        <span>$47.99</span>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+
+      <div class="container-details-product">
+        <div class="form-group">
+          <label for="size">Talla</label>
+          <select name="size" id="size">
+            <option disabled selected value="">
+              Escoge una opción
+            </option>
+            <option value="40">40</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="container-add-cart">
+        <div class="container-quantity">
+          <input
+            type="number"
+            placeholder="1"
+            value="1"
+            min="1"
+            class="input-quantity"
+          />
+          <div class="btn-increment-decrement">
+            <i class="fa-solid fa-chevron-up" id="increment"></i>
+            <i class="fa-solid fa-chevron-down" id="decrement"></i>
+          </div>
+        </div>
+        <button class="btn-comprar" id="comprar">
+          <i class="fa-solid fa-plus"></i>
+          Comprar
+        </button>
+
+        <img class="check" id="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC3UlEQVR4nO1ZPW8TQRA9IFAg0fDR8PEvAEHlPxBFMfPGdqBPjWgCNJYoAjRIiCCIKEEoShSlANKmoQF5xnJkKio+CgQJZTA0RrtnnY442Hu+9fkieaSpfL59b3Z25u1cEIxtbGNLbbzMh1j4MivdZsUqC32A0E8o/WGh36zYYqVNFlqB4hYJna+2qweDUVv5ffkcFPdY6Csr2olc8AWCO8VG8WzmwFn5FCstdqLbTuNQ+gXBw+l30yeyAn+VhbbTAu8iIvStJFdoaMBna7OHWeiZb+DctSN4UNgoTHgFP1mbPMqC9WGD52g3sMZNPuIx8tmB5+iQ8w0vBLJIG+5yWvKSRqjj2r4Fz6ZUDqHaJAVf2ChMTL2dOjYAAVrMA3hWWmKl+4nAm+7oo0k5u2B5N/hQntCLDrmdilROOxOw8iAXkUf0HBRVJ/BGZBmdko/II070Y9AODvQlEKrK/ESeY25UbH8CoSTOHXg2aVTDdQcCWO2z7evmkBu3LT8j8BxKjJcOKYRmr5fE9bvrwj7Ac+gNBwK9m9fuC4g7gNTg2+bi5EKgZ/03aZMciAfwat+zk5pAJxIre5U/KJ6nK5Xosy5aLgTc9I8LCZ/g1V4/f6Q+xO6p4SttEF9vM30ZdSThHzzsrg+nke2RTr7Shv9dZ64vgVKteMnnRcRL5DX0khYvOIk5KH0edIvjJLxFXm2APjlP81jo7qALmT5hmp2d2g0kNfC/4MwHub3QaD/waHGdzwRJDIonIweuUfo8SgTeplGTj5vGMXrw2JqpzZxMTMDugqAyagKogwcCH+2E0tORgVcspAIf6Ruf1cTVhV57G/Ka4S4EbzIk8MqsGfg0M+TNojJBseB9vB43Fi4PpToJfU99YF3NfA5ioce2waQGjpap86ZsB1mb6Y5Gdgyinex/hOYTd9hhmJ3m1fkiK980gq7zSXXbypHQzS2vYX8TmjOqMhefWcc2tmD/218U8Vx58wrWFwAAAABJRU5ErkJggg==">
+      </div>
+
+      <div class="container-description">
+        <div class="title-description">
+          <h4>Descripción</h4>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="text-description">
+          <p>
+            La gorra ajustada NFL Pro Bowl 59FIFTY de 1991 presenta el logotipo oficial de los Pro Bowl Games de 1991 bordado en los paneles frontales con un escudo de la NFL a juego en la parte trasera, una visera verde lima y una visera con estampado floral tropical.
+          </p>
+        </div>
+      </div>
+
+      <div class="container-additional-information">
+        <div class="title-additional-information">
+          <h4>Información adicional</h4>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="text-additional-information hidden">
+          <p>-----------</p>
+        </div>
+      </div>
+
+      <div class="container-reviews">
+        <div class="title-reviews">
+          <h4>Reseñas</h4>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="text-reviews hidden">
+          <p>-----------</p>
+        </div>
+      </div>
+  </main>
+
+  <script>
+    $(document).ready(function () {
+    $("#menu1").click(function () {
+
+        $("#menu").toggle(
+        );
+
+    })
+
+  });
+
+  $(document).ready(function () {
+    $("#comprar").click(function () {
+        confirm("¿Comprar producto?");
+        $("#check").show(
+        );
+
+    })
+
+    });
+  </script>
+  </html>

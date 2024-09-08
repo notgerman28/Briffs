@@ -1,0 +1,1328 @@
+body {
+
+    background-color: #f7f7f7;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: fuente1;
+    src: url(/tipografias/Baron\ Neue.otf);
+}
+
+@font-face {
+    font-family: fuente2;
+    src: url(/tipografias/Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+    font-family: fuente3;
+    src: url(/tipografias/MKAbel.ttf);
+
+}
+
+.cart-products {
+    position: absolute;
+    top: 4rem;
+    right: -18px;
+    background-color: #fff;
+    padding: 0 18px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    display: none;
+    z-index: 999;
+    min-width: 290px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    font-family: fuente3;
+    src: url(MKAbel.ttf);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.cart:hover {
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+
+.container-icon {
+    position: relative;
+    top: 11px;
+    left: 113rem;
+    width: 50px;
+    cursor: pointer;
+
+}
+
+.count-products {
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #fbfbfb;
+    color: #000000;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos {
+    font-size: 12px;
+}
+
+.menu {
+
+    background-color: #000000;
+    position: absolute;
+    top: 0px;
+    height: 100px;
+    width: 1910px;
+    z-index: 3;
+
+}
+
+.fondo1 {
+
+    width: 100%;
+    height: 100%;
+    opacity: 98%;
+}
+
+.logo {
+
+
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 0px;
+    left: 905px;
+
+}
+
+.menu1 {
+    z-index: 3;
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    top: 16px;
+    left: 20px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.menu1:hover {
+
+    background-color: #212121;
+    border-radius: 100%;
+    display: block;
+}
+
+.user {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 1720px;
+    top: 19px;
+    z-index: 2;
+    padding: 10px;
+}
+
+.user:hover {
+    background-color: #212121;
+    border-radius: 100%;
+    display: block;
+}
+
+.car {
+
+    position: absolute;
+    height: 55px;
+    width: 60px;
+    top: 19px;
+    left: 1800px;
+    z-index: 2;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.car:hover {
+
+    background-color: #212121;
+    border-radius: 100%;
+    display: block;
+}
+
+.search {
+
+    position: absolute;
+    top: 30px;
+    width: 190px;
+    height: 40px;
+    border: #000000;
+    border-radius: 30px;
+    left: 1460px;
+    transition: 0.5 ease;
+    padding-left: 40px;
+    outline: none;
+}
+
+.search:focus {
+
+    border: black;
+}
+
+.search:hover {
+
+    background-color: #ffffff;
+
+}
+
+::placeholder {
+
+    position: absolute;
+    left: 45px;
+}
+
+.sea {
+
+    position: absolute;
+    top: 38px;
+    height: 25px;
+    width: 25px;
+    left: 1471px;
+}
+
+
+
+.opaco {
+
+
+    height: 615px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    z-index: 2;
+
+
+}
+
+.black-div {
+    background-color: #000000;
+    width: 1910px;
+    height: 602px;
+    position: absolute;
+    top: 825px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button1 {
+
+    background-color: rgba(255, 255, 255, 0.96);
+    width: 230px;
+    height: 70px;
+    border-radius: 80px;
+    top: 65%;
+    position: absolute;
+    left: 400px;
+    top: 450px;
+    z-index: 999;
+    border: #000000;
+    cursor: pointer;
+}
+
+.button1:hover {
+
+    background-color: #dfdddd;
+}
+
+.textoboton {
+
+    color: #000000;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
+
+    position: absolute;
+    top: 84px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 999;
+    right: 94%;
+    display: none;
+    z-index: 100;
+
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    width: 120px;
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px 50px;
+    width: 150px;
+    height: 43.5px;
+    color: #ffffff;
+    background-color: #101010fb;
+    font-size: 20px;
+    z-index: 1;
+
+}
+
+li a:hover {
+    color: #000;
+    background-color: #f9f8f8;
+
+}
+
+.lil {
+    list-style-type: none;
+    position: relative;
+    width: 120px;
+}
+
+.lil a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px 50px;
+    width: 150px;
+    height: 43.5px;
+    color: #ffffff;
+    background-color: #101010fb;
+    font-size: 20px;
+    z-index: 1;
+
+}
+
+.lil a:hover {
+
+    background-color: #101010fb;
+}
+
+.my-carousel {
+
+    z-index: 998;
+    position: relative;
+    background-color: #2e2e2e;
+    width: 800rem;
+    height: 4rem;
+    top: -18rem;
+    display: flex;
+    color: white;
+    font-family: fuente2;
+    src: url(Louis\ George\ Cafe.ttf);
+
+}
+
+.my-slide {
+
+    font-size: 23px;
+    position: relative;
+    left: 100rem;
+    top: 1rem;
+}
+
+
+.my-carousel .slides {
+    display: flex;
+    gap: 3rem;
+    animation: scroll 100s linear infinite;
+    width: calc(180px * 27);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-70%);
+    }
+}
+
+.briffs {
+
+    color: #ffffff;
+    z-index: 99;
+    font-size: 100px;
+    position: absolute;
+    left: 365px;
+    top: 160px;
+    font-family: fuente1;
+    src: url(Baron\ Neue.otf);
+    text-shadow: #000 5px 8px 5px;
+
+}
+
+.b1 {
+
+    object-fit: cover;
+    width: 450px;
+    height: 430px;
+    top: 0px;
+    opacity: 60%;
+
+}
+
+.b1:hover {
+
+    opacity: 90%;
+
+}
+
+.b1cont:hover {
+
+    transform: translateY(-10px);
+    transition: all 0.1s ease-in-out;
+
+}
+
+.b1cont {
+
+    position: absolute;
+    left: 18rem;
+    top: 6rem;
+}
+
+.b2cont {
+
+    position: absolute;
+    left: 47rem;
+    top: 921px;
+}
+
+.b3cont {
+
+    position: absolute;
+    left: 74.7rem;
+    top: 921px;
+}
+
+.b2 {
+
+    object-fit: cover;
+    top: 70px;
+    max-width: fit-content;
+    width: 450px;
+    height: 430px;
+    opacity: 60%;
+}
+
+.b2:hover {
+
+    opacity: 100%;
+
+}
+
+.b2cont:hover {
+
+    transform: translateY(-7px);
+    transition: all 0.1s ease-in-out;
+
+}
+
+.b3 {
+
+    object-fit: cover;
+    top: 70px;
+    max-width: fit-content;
+    width: 450px;
+    height: 430px;
+    opacity: 60%;
+}
+
+.b3:hover {
+
+    opacity: 90%;
+}
+
+.b3cont:hover {
+
+    transform: translateY(-7px);
+    transition: all 0.1s ease-in-out;
+}
+
+.nba {
+
+    width: 60px;
+    height: 111px;
+    position: absolute;
+    left: 20px;
+    top: 310px;
+    z-index: 999;
+}
+
+.nfl {
+
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 20px;
+    top: 320px;
+    z-index: 999;
+}
+
+.mlb {
+
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 350px;
+    z-index: 999;
+}
+
+.eslogan {
+
+    position: absolute;
+    left: 405px;
+    top: 340px;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+#menu1 {
+
+    background-color: transparent;
+    border: none;
+}
+
+.seccionsummer {
+
+    position: absolute;
+    background-color: rgb(230, 248, 255);
+    height: 958px;
+    width: 1900px;
+    top: 89.1rem;
+    z-index: 988;
+}
+
+.mgorras2 {
+
+    z-index: 99;
+    position: absolute;
+    top: 89.1rem;
+    left: 980px;
+    width: 1087px;
+    z-index: 989;
+}
+
+.medition {
+
+    z-index: 999;
+    color: #000;
+    font-size: 80px;
+    position: absolute;
+    top: 101rem;
+    left: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.medition2 {
+
+    z-index: 999;
+    color: #000;
+    font-size: 30px;
+    position: absolute;
+    top: 119rem;
+    left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.textoboton2 {
+
+    color: white;
+    font-family: "Protest Riot", sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: -2px;
+    left: 60px;
+    font-style: normal;
+}
+
+.button2 {
+
+    background-color: rgba(0, 0, 0, 0.96);
+    color: white;
+    width: 230px;
+    height: 70px;
+    border-radius: 80px;
+    top: 128rem;
+    position: absolute;
+    left: 150px;
+    z-index: 999;
+    border: #000000;
+    cursor: pointer;
+}
+
+.button2:hover {
+
+    background-color: #222222;
+}
+
+.seccion3 {
+
+    position: absolute;
+    background-color: transparent;
+    height: 728px;
+    width: 1900px;
+    top: 160rem;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+.s1 {
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    height: 650px;
+    box-shadow: 0 9px 19px #0000000a, 0 2px 4px #00000005, 0 0.5px 1px #00000003;
+    transition: all 0.1s ease-in-out;
+}
+
+.s1:hover {
+
+    transform: translateY(-7px);
+    transition: all 0.1s ease-in-out;
+
+}
+
+
+.s2 {
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    height: 650px;
+    box-shadow: 0 9px 19px #0000000a, 0 2px 4px #00000005, 0 0.5px 1px #00000003;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.s2:hover {
+
+    transform: translateY(-7px);
+    transition: all 0.1s ease-in-out;
+
+}
+
+
+.s3 {
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    height: 650px;
+    box-shadow: 0 9px 19px #0000000a, 0 2px 4px #00000005, 0 0.5px 1px #00000003;
+    transition: all 0.1s ease-in-out;
+}
+
+.s3:hover {
+
+    transform: translateY(-7px);
+    transition: all 0.1s ease-in-out;
+
+}
+
+
+.s4 {
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    height: 650px;
+    box-shadow: 0 9px 19px #0000000a, 0 2px 4px #00000005, 0 0.5px 1px #00000003;
+    transition: all 0.1s ease-in-out;
+}
+
+.s4:hover {
+
+    transform: translateY(-7px);
+    transition: all 0.1s ease-in-out;
+
+}
+
+.mlbdo {
+
+    height: 22px;
+    position: absolute;
+    top: 25px;
+    left: 34px;
+    display: flex;
+}
+
+.mlb2 {
+
+    background-color: #000;
+    height: 70px;
+    width: 170px;
+    border-radius: 40px;
+    z-index: 989;
+    position: absolute;
+    top: 154rem;
+    left: 105px;
+    cursor: pointer;
+}
+
+.mlb2:hover {
+
+    background-color: #181818;
+}
+
+.mlbtext {
+
+    font-family: "Protest Riot", sans-serif;
+    color: #fff;
+    position: absolute;
+    top: -3px;
+    left: 85px;
+    font-size: 25px;
+    z-index: 989;
+    height: 10px;
+    width: 100px;
+}
+
+.nbado {
+
+    height: 48px;
+    position: absolute;
+    top: 12px;
+    left: 43px;
+    display: flex;
+}
+
+.nba2 {
+
+    background-color: #e2e2e2;
+    height: 70px;
+    width: 170px;
+    border-radius: 40px;
+    z-index: 999;
+    position: absolute;
+    top: 154rem;
+    left: 300px;
+    cursor: pointer;
+}
+
+.nba2:hover {
+
+    background-color: #d5d5d5;
+}
+
+.nbatext {
+
+    font-family: "Protest Riot", sans-serif;
+    color: #000000;
+    position: absolute;
+    top: -3px;
+    left: 75px;
+    font-size: 25px;
+    z-index: 989;
+    height: 10px;
+    width: 100px;
+}
+
+.nfldo {
+
+    height: 42px;
+    position: absolute;
+    top: 15px;
+    left: 31px;
+    display: flex;
+}
+
+.nfl2 {
+
+    background-color: #e2e2e2;
+    height: 70px;
+    width: 170px;
+    border-radius: 40px;
+    z-index: 989;
+    position: absolute;
+    top: 154rem;
+    left: 500px;
+    cursor: pointer;
+}
+
+.nfl2:hover {
+
+    background-color: #d5d5d5;
+}
+
+.nfltext {
+
+    font-family: "Protest Riot", sans-serif;
+    color: #000000;
+    position: absolute;
+    top: -3px;
+    left: 75px;
+    font-size: 25px;
+    z-index: 989;
+    height: 100px;
+    width: 100px;
+}
+
+.titcarta {
+
+    font-family: "Protest Riot", sans-serif;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.textcarta {
+
+    font-family: "Protest Riot", sans-serif;
+    font-size: 15px;
+    color: #565656;
+    padding-left: 20px;
+
+
+}
+
+.seccion4 {
+
+    z-index: 989;
+    background-color: #000000;
+    position: absolute;
+    height: 1000px;
+    width: 2000px;
+    top: 215rem;
+}
+
+.dest {
+
+    color: #ffffff;
+    font-family: "Protest Riot", sans-serif;
+    font-size: 65px;
+    position: absolute;
+    left: 100px;
+    top: 70px;
+}
+
+.tiendaboton {
+
+    font-family: "Protest Riot", sans-serif;
+    background-color: #fff;
+    height: 75px;
+    width: 180px;
+    border-radius: 50px;
+    position: absolute;
+    left: 88rem;
+    top: 8rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.tiendaboton:hover {
+
+    background-color: #e4e0e0;
+}
+
+.izq {
+
+    background-color: #2e2e2e;
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    left: 101rem;
+    top: 223rem;
+    border-radius: 100%;
+    z-index: 999;
+    display: flex;
+    place-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ari {
+
+    position: absolute;
+    left: 12px;
+
+}
+
+.izq:hover {
+
+    background-color: #565656;
+}
+
+.der {
+
+    background-color: #2e2e2e;
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    left: 107rem;
+    top: 223rem;
+    border-radius: 100%;
+    z-index: 999;
+    display: flex;
+    place-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ard {
+
+    position: absolute;
+    left: 20px;
+
+}
+
+.der:hover {
+
+    background-color: #565656;
+}
+
+.contp {
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    top: 17rem;
+    left: 6rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.contp::-webkit-scrollbar {
+    display: none;
+}
+
+.pri7{
+
+    position: relative;
+    width: 500px;
+    height: 480px;
+    left: 20px;
+}
+
+.ne8{
+
+   position: relative;
+   color: white;
+   font-size: 20px;
+   left: 435px;
+   top: -40px;
+   font-family: "Protest Riot", sans-serif;
+
+}
+
+.pr1 {
+
+    width: 520px;
+    height: 580px;
+    background-color: #212121;
+    transition: all 0.1s ease-in-out;
+}
+
+.pr1:hover {
+
+    transform: translateY(-7px);
+    transition: all 0.1s ease-in-out;
+
+}
+
+.pr2 {
+
+    width: 520px;
+    height: 580px;
+    background-color: #212121;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.pr2:hover {
+
+    transform: translateY(-7px);
+    transition: all 0.1s ease-in-out;
+
+}
+
+.pr3 {
+
+    width: 520px;
+    height: 580px;
+    background-color: #212121;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.pr3:hover {
+
+    transform: translateY(-7px);
+    transition: all 0.1s ease-in-out;
+
+}
+
+.pri1 {
+
+    position: relative;
+    left: 75px;
+    top: 120px;
+}
+
+.pri2 {
+
+    position: relative;
+    left: 75px;
+    top: 120px;
+
+}
+
+.pr1 img{
+
+    cursor: pointer;
+}
+
+.pri3 {
+
+    position: relative;
+    left: 75px;
+    top: 120px;
+}
+
+.linea1 {
+
+    position: absolute;
+    top: 430px;
+    width: 518px;
+    border: #3d3d3d solid 1px;
+
+}
+
+.ne {
+
+    color: #b3b3b3;
+    font-size: 30px;
+    padding-left: 20px;
+    position: absolute;
+    top: 27rem;
+    font-family: fuente3;
+    src: url(MKAbel.ttf);
+    letter-spacing: 2px;
+}
+
+.ne2 {
+
+    font-family: "Protest Riot", sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+    padding-left: 20px;
+    position: absolute;
+    top: 30rem;
+
+}
+
+.ne3 {
+
+    font-family: "Protest Riot", sans-serif;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    top: 195px;
+    left: 430px;
+}
+
+
+.lineafooter {
+
+    position: absolute;
+    left: 50px;
+    top: 62rem;
+    z-index: 999;
+    border: solid 1px rgb(255, 255, 255);
+    width: 112rem;
+}
+
+footer {
+
+    background-color: #000000;
+    position: absolute;
+    width: 120rem;
+    height: 560px;
+    top: 260.5rem;
+}
+
+.logo2 {
+
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 23rem;
+    left: 65px;
+}
+
+.arroba {
+
+    position: absolute;
+    top: 28rem;
+    left: 63px;
+    font-size: 25px;
+    color: rgb(92, 92, 92);
+    font-family: "Protest Riot", sans-serif;
+}
+
+.imgfooter {
+    height: 75px;
+    width: 80px;
+    transition: 0.5 ease-in-out;
+
+}
+
+
+.path1:hover {
+    fill: white;
+    transition: 0.5 ease-in-out;
+
+}
+
+.imgfooter:hover {
+
+    color: #ffffff;
+    transition: 0.5 ease-in-out;
+
+
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 27rem;
+    left: 94rem;
+}
+
+.wrapper {
+    position: fixed;
+    bottom: 50px;
+    right: -26rem;
+    max-width: 345px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    transition: right 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.wrapper.show {
+    right: 2rem;
+    z-index: 999;
+}
+
+.wrapper .data {
+    margin-top: 16px;
+}
+
+.wrapper .data p {
+    color: #000000;
+    font-size: 16px;
+}
+
+.wrapper .buttons {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons .button {
+    border: none;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 4px;
+    background: #000000;
+    cursor: pointer;
+    width: 160px;
+    height: 35px;
+    transition: all 0.2s ease;
+
+}
+
+#declineBtn {
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#declineBtn:hover {
+    background-color: #e66d6d;
+    color: #fff;
+}
+
+.cookiestexto {
+
+    font-family: fuente2;
+    src: url(Louis\ George\ Cafe.ttf);
+}
+
+.cookiestit {
+    font-family: fuente2;
+    src: url(Louis\ George\ Cafe.ttf);
+}
+
+.cookieimg {
+
+    position: absolute;
+    top: 39px;
+    left: 20rem;
+}
+
+
+.greenfn2 {
+    display: none;
+}
+
+.greenfn3 {
+    display: none;
+
+}
+
+.mlbdo2 {
+
+    height: 22px;
+    position: absolute;
+    top: 25px;
+    left: 34px;
+    display: flex;
+}
+
+.mlb3 {
+
+    background-color: #e2e2e2;
+    height: 70px;
+    width: 170px;
+    border-radius: 40px;
+    z-index: 989;
+    position: absolute;
+    top: 154rem;
+    left: 105px;
+    cursor: pointer;
+    display: none;
+}
+
+.mlb3:hover {
+
+    background-color: #d5d5d5;
+}
+
+.mlbtext2 {
+
+    font-family: "Protest Riot", sans-serif;
+    color: #000000;
+    position: absolute;
+    top: -3px;
+    left: 85px;
+    font-size: 25px;
+    z-index: 989;
+    height: 10px;
+    width: 100px;
+}
+
+.nbado2 {
+
+    height: 48px;
+    position: absolute;
+    top: 12px;
+    left: 43px;
+    display: flex;
+}
+
+.nba3 {
+
+    background-color: #000;
+    height: 70px;
+    width: 170px;
+    border-radius: 40px;
+    z-index: 999;
+    position: absolute;
+    top: 154rem;
+    left: 300px;
+    cursor: pointer;
+    display: none;
+}
+
+.nba3:hover {
+
+    background-color: #181818;
+}
+
+.nbatext2 {
+
+    font-family: "Protest Riot", sans-serif;
+    color: #ffffff;
+    position: absolute;
+    top: -3px;
+    left: 75px;
+    font-size: 25px;
+    z-index: 989;
+    height: 10px;
+    width: 100px;
+}
+
+.nfldo2 {
+
+    height: 42px;
+    position: absolute;
+    top: 15px;
+    left: 31px;
+    display: flex;
+}
+
+.nfl3 {
+
+    background-color: #000;
+    height: 70px;
+    width: 170px;
+    border-radius: 40px;
+    z-index: 989;
+    position: absolute;
+    top: 154rem;
+    left: 500px;
+    cursor: pointer;
+    display: none;
+}
+
+.nfl3:hover {
+
+    background-color: #181818;
+}
+
+.nfltext2 {
+
+    font-family: "Protest Riot", sans-serif;
+    color: #ffffff;
+    position: absolute;
+    top: -3px;
+    left: 75px;
+    font-size: 25px;
+    z-index: 989;
+    height: 100px;
+    width: 100px;
+}

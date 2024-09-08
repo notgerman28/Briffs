@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <title>Briffs</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <button id="menu1">
+                <img class="menu1" src="img/menu.png" alt="">
+            </button>
+
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="">
+            </a>
+
+            <a href="form.html">
+                <img class="user" src="img/user.png" alt="">
+                <div class="preuser"></div>
+            </a>
+
+            <input class="search" type="text" placeholder="Buscar">
+            <img class="sea" src="img/search.png" alt="">
+
+         
+      <div class="container-icon">
+        <div class="container-cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="White"
+            class="icon-cart">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+          </svg>
+          <div class="count-products">
+            <span id="contador-productos">0</span>
+          </div>
+        </div>
+        
+        <div class="cart-products" id="products-id">
+          <h2>Total: $<strong class="price-total">0</strong></h2>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+
+            <h2 class="cookiestit">Consentimiento de Cookies</h2>
+            <svg class="cookieimg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)"><path d="M21.598 11.064a1.006 1.006 0 0 0-.854-.172A2.938 2.938 0 0 1 20 11c-1.654 0-3-1.346-3.003-2.937.005-.034.016-.136.017-.17a.998.998 0 0 0-1.254-1.006A2.963 2.963 0 0 1 15 7c-1.654 0-3-1.346-3-3 0-.217.031-.444.099-.716a1 1 0 0 0-1.067-1.236A9.956 9.956 0 0 0 2 12c0 5.514 4.486 10 10 10s10-4.486 10-10c0-.049-.003-.097-.007-.16a1.004 1.004 0 0 0-.395-.776zM12 20c-4.411 0-8-3.589-8-8a7.962 7.962 0 0 1 6.006-7.75A5.006 5.006 0 0 0 15 9l.101-.001a5.007 5.007 0 0 0 4.837 4C19.444 16.941 16.073 20 12 20z"></path><circle cx="12.5" cy="11.5" r="1.5"></circle><circle cx="8.5" cy="8.5" r="1.5"></circle><circle cx="7.5" cy="12.5" r="1.5"></circle><circle cx="15.5" cy="15.5" r="1.5"></circle><circle cx="10.5" cy="16.5" r="1.5"></circle></svg>
+
+            <div class="data">
+              <p class="cookiestexto">Este sitio web utiliza cookies para ayudarle a tener una experiencia de navegación superior y más relevante en el sitio web.</p>
+            </div>
+      
+            <div class="buttons">
+              <button class="button" id="acceptBtn">Aceptar</button>
+              <button class="button" id="declineBtn">Rechazar</button>
+            </div>
+          </div>
+
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="shop.html">Tienda</a></li>
+            <li><a href="mision.html">Sobre nosostros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="lil"><a style="color: #101010e0;" href="">.</a></li>
+            <li class="lil"><a style="color: #101010e0;" href="">.</a></li>
+            <li class="lil"><a style="color: #101010e0;" href="">.</a></li>
+        </ul>
+
+        <div class="tranparente"></div>
+        <img class="fondo1"
+        <img srcset="//www.neweracap.com/cdn/shop/files/MLB24_GDPJapan_HomePage_frames_HeroDesktop_2880x1600_e5825837-b168-4103-b5e7-3eccb9911f8c.jpg?v=1711458783&amp;width=375 375w,//www.neweracap.com/cdn/shop/files/MLB24_GDPJapan_HomePage_frames_HeroDesktop_2880x1600_e5825837-b168-4103-b5e7-3eccb9911f8c.jpg?v=1711458783&amp;width=550 550w,//www.neweracap.com/cdn/shop/files/MLB24_GDPJapan_HomePage_frames_HeroDesktop_2880x1600_e5825837-b168-4103-b5e7-3eccb9911f8c.jpg?v=1711458783&amp;width=750 750w,//www.neweracap.com/cdn/shop/files/MLB24_GDPJapan_HomePage_frames_HeroDesktop_2880x1600_e5825837-b168-4103-b5e7-3eccb9911f8c.jpg?v=1711458783&amp;width=1100 1100w,//www.neweracap.com/cdn/shop/files/MLB24_GDPJapan_HomePage_frames_HeroDesktop_2880x1600_e5825837-b168-4103-b5e7-3eccb9911f8c.jpg?v=1711458783&amp;width=1500 1500w,//www.neweracap.com/cdn/shop/files/MLB24_GDPJapan_HomePage_frames_HeroDesktop_2880x1600_e5825837-b168-4103-b5e7-3eccb9911f8c.jpg?v=1711458783&amp;width=1780 1780w,//www.neweracap.com/cdn/shop/files/MLB24_GDPJapan_HomePage_frames_HeroDesktop_2880x1600_e5825837-b168-4103-b5e7-3eccb9911f8c.jpg?v=1711458783&amp;width=2000 2000w,Liquid error (sections/hero line 183): invalid url input files/MLB24_GDPJapan_HomePage_frames_HeroDesktop_2880x1600_e5825837-b168-4103-b5e7-3eccb9911f8c.jpgw" src="//www.neweracap.com/cdn/shop/files/MLB24_GDPJapan_HomePage_frames_HeroDesktop_2880x1600_e5825837-b168-4103-b5e7-3eccb9911f8c.jpg?v=1711458783&amp;width=300" alt="Shop headwear and accessories from the Global Design Project Japan" data-src="//www.neweracap.com/cdn/shop/files/MLB24_GDPJapan_HomePage_frames_HeroDesktop_2880x1600_e5825837-b168-4103-b5e7-3eccb9911f8c.jpg?v=1711458783" data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]" data-aspectratio="1.8" data-sizes="auto" data-parent-fit="cover" width="2880" height="1600" fetchpriority="high">
+        <div class="opaco">
+            <h1 data-aos="zoom-in" data-aos-duration="800" class="briffs">Briffs</h1>
+            <h2 class="eslogan">Brilla y vive con estilo.</h2>
+            <a href="shop.html">
+            <button class="button1">
+                <h1 class="textoboton">Ver colección</h1>
+            </button>
+            </a>
+        </div>
+
+        <div class="my-carousel">
+            <div class="slides">
+                <div class="my-slide">Hasta 45% de descuento en estilos seleccionados</div>
+                <div class="my-slide">Hasta 45% de descuento en estilos seleccionados</div>
+                <div class="my-slide">Hasta 45% de descuento en estilos seleccionados</div>
+                <div class="my-slide">Hasta 45% de descuento en estilos seleccionados</div>
+                <div class="my-slide">Hasta 45% de descuento en estilos seleccionados</div>
+                <div class="my-slide">Hasta 45% de descuento en estilos seleccionados</div>
+                <div class="my-slide">Hasta 45% de descuento en estilos seleccionados</div>
+            </div>
+        </div>
+
+        
+        <div class="black-div">
+
+            <a style="color: transparent;" href="shop.html">
+                <div class="b1cont">
+                <img class="b1"
+                    src="//www.neweracap.com/cdn/shop/files/MicrosoftTeams-image_1_031d0127-ff90-48b5-b777-08bd3ec2a917.jpg?v=1698845493&amp;width=560"
+                    alt="59FIFTY Fitted on model" loading="lazy" width="560" height="560">
+                    <img data-aos="fade-up" data-aos-duration="500" class="nba" src="img/nba logo.png" alt="">
+                </div>
+            </div>
+            </a>
+  
+                <div class="b2cont">
+                    <a style="color: transparent;" href="shop2.html">
+                <img class="b2"
+                    src="//www.neweracap.com/cdn/shop/files/MicrosoftTeams-image_3_121c7086-2206-4d0f-b32c-003c55ee8f20.jpg?v=1698845516&amp;width=560"
+                    alt="Buffalo Bills 9FIFTY Snapback Image" loading="lazy" width="560" height="560">
+                    <img data-aos="fade-up" data-aos-duration="500" class="mlb" src="img/mlb logo.png" alt="">
+                </a>
+                </div>
+           
+
+                <div class="b3cont">     
+                    <a style="color: transparent;" href="shop3.html">
+                <img class="b3"
+                    src="//www.neweracap.com/cdn/shop/files/MicrosoftTeams-image_2_42b60b5d-bf8d-4bb2-97bd-934f158c7596.jpg?v=1698845572&amp;width=560"
+                    alt="New Era Pins and Clips Image" loading="lazy" width="560" height="560">
+                    <img data-aos="fade-up" data-aos-duration="500" class="nfl" src="img/nfl logo.png" alt="">
+                </div>
+            </a>    
+       
+
+        <img class="mgorras2" class="banner_img_with_collection__item__img" src="//www.neweracap.com/cdn/shop/files/MLS24_Kickoff_HomePage_framesFull_Bleed_Desktop_1440x1270_bd9a0008-a359-4b70-a65c-e98741212229.jpg?v=1709647227&amp;width=1280" alt="Shop the 2024 MLS Kickoff collection" loading="lazy" width="1280" height="full">
+
+            <p  data-aos="fade-up" data-aos-duration="500" class="medition">MLB summer <br> edition</p>
+            <p  data-aos="fade-up" data-aos-duration="500" class="medition2">Mira lo nuevo que nos trae la MLB con su edicion <br> de verano “kickoff”</p>
+        <div class="seccionsummer">
+        </div>
+
+        <a href="shop2.html">
+            <button class="button2">
+                <p class="textoboton2">Ver ahora</p>
+            </button>
+        </a>  
+        
+        <div class="cajamarca1">
+            <div class="mlb2" id="mlb">
+                <img class="mlbdo" src="img/mlb logo.png" alt="">
+                <p class="mlbtext">MLB</p>
+            </div>
+
+            <div class="nba2" id="nba">
+                <img class="nbado" src="img/nba logo.png" alt="">
+                <p class="nbatext">NBA</p>
+            </div>
+
+            <div class="nfl2" id="nfl">
+                <img class="nfldo" src="img/nfl logo.png" alt="">
+                <p class="nfltext">NFL</p>
+            </div>
+        </div>
+
+        <div class="cajamarca2">
+            <div class="mlb3" id="mlb1">
+                <img class="mlbdo2" src="img/mlb logo.png" alt="">
+                <p class="mlbtext2">MLB</p>
+            </div>
+
+            <div class="nba3" id="nba1">
+                <img class="nbado2" src="img/nba logo.png" alt="">
+                <p class="nbatext2">NBA</p>
+            </div>
+
+            <div class="nfl3" id="nfl1">
+                <img class="nfldo2" src="img/nfl logo.png" alt="">
+                <p class="nfltext2">NFL</p>
+            </div>
+        </div>
+
+        <div class="greenfn1" id="greenfn1">
+            <div  data-aos="fade-up" data-aos-duration="1000" class="seccion3">
+                <a href="shop2.html">
+                    <div class="s1"><img src="//www.neweracap.com/cdn/shop/files/SS24_HomePage_frames_Carousel_800x1000_1ffc6e4e-0916-42a3-b85f-8c3b9c8bc48d.jpg?v=1710249994&amp;width=800" alt="Shop the Spring Summer 2024 Collection in headwear and apparel" srcset="//www.neweracap.com/cdn/shop/files/SS24_HomePage_frames_Carousel_800x1000_1ffc6e4e-0916-42a3-b85f-8c3b9c8bc48d.jpg?v=1710249994&amp;width=352 352w, //www.neweracap.com/cdn/shop/files/SS24_HomePage_frames_Carousel_800x1000_1ffc6e4e-0916-42a3-b85f-8c3b9c8bc48d.jpg?v=1710249994&amp;width=400 400w" width="400" height="500" loading="lazy"format="pjpg">
+                </a>
+                <p class="titcarta">Spring Summer 2024</p>
+                <p class="textcarta">Moda para todos. Primavera Verano 2024<br>ya está aquí con nuevos sombreros y prendas <br> de tus equipos favoritos de la MLB.</p>
+            </div>
+
+                <div class="s2">
+                <a href="shop2.html">
+                    <img src="//www.neweracap.com/cdn/shop/files/MLB24_MetallicCamo_HomePage_frames_Carousel_800x1000_4f501fc3-8ba5-4141-b651-f70a712eadcf.jpg?v=1709733780&amp;width=800" alt="Shop the Metallic Camo collection in select MLB teams" srcset="//www.neweracap.com/cdn/shop/files/MLB24_MetallicCamo_HomePage_frames_Carousel_800x1000_4f501fc3-8ba5-4141-b651-f70a712eadcf.jpg?v=1709733780&amp;width=352 352w, //www.neweracap.com/cdn/shop/files/MLB24_MetallicCamo_HomePage_frames_Carousel_800x1000_4f501fc3-8ba5-4141-b651-f70a712eadcf.jpg?v=1709733780&amp;width=400 400w" width="400" height="500" loading="lazy"  format="pjpg">
+                </a>
+                <p class="titcarta">MBL Metallic Camo</p> 
+                <p class="textcarta">Realza cualquier look con detalles metálicos  <br> y viseras de camuflaje.
+                    Equipos selectos <br> de la MLB ya están disponibles en 59FIFTY Fitteds.</p>   
+            </div>
+
+                <div class="s3">
+                <a href="shop2.html">    
+                    <img src="//www.neweracap.com/cdn/shop/files/NEC_MLB24_Sport_Classic_HomePage_framesCarousel_800x1000_f8b3cc9d-4dc4-45c2-ad1f-34903f4c6b84.jpg?v=1709563644&amp;width=800" alt="League Card background image" srcset="//www.neweracap.com/cdn/shop/files/NEC_MLB24_Sport_Classic_HomePage_framesCarousel_800x1000_f8b3cc9d-4dc4-45c2-ad1f-34903f4c6b84.jpg?v=1709563644&amp;width=352 352w, //www.neweracap.com/cdn/shop/files/NEC_MLB24_Sport_Classic_HomePage_framesCarousel_800x1000_f8b3cc9d-4dc4-45c2-ad1f-34903f4c6b84.jpg?v=1709563644&amp;width=400 400w" width="400" height="500" loading="lazy"  format="pjpg">
+                </a>
+                <p class="titcarta">New Era Sports Classics</p>
+                <p class="textcarta">Equipos ganadores, estilo ganador. Apoya a tus <br> campeones favoritos de la Serie Mundial de la MLB <br> con nuevos sombreros y prendas.</p>
+            </div>
+
+                <div class="s4">
+                <a href="shop2.html">
+                    <img src="//www.neweracap.com/cdn/shop/files/MULTI24_JCGreenWool_HomePage_frames_Carousel_800x1000_8f85bf6b-8cb4-4462-8975-150a6372c432.jpg?v=1710334499&amp;width=800" alt="League Card background image" srcset="//www.neweracap.com/cdn/shop/files/MULTI24_JCGreenWool_HomePage_frames_Carousel_800x1000_8f85bf6b-8cb4-4462-8975-150a6372c432.jpg?v=1710334499&amp;width=352 352w, //www.neweracap.com/cdn/shop/files/MULTI24_JCGreenWool_HomePage_frames_Carousel_800x1000_8f85bf6b-8cb4-4462-8975-150a6372c432.jpg?v=1710334499&amp;width=400 400w" width="400" height="500" loading="lazy" class="slider_by_league__card__img" format="pjpg">
+                </a>
+                <p class="titcarta">Dark Green Wool</p>
+                <p class="textcarta">Realza cualquier look con detalles metálicos <br> y viseras de  camuflaje. Equipos selectos de la MLB <br>  ya están disponibles en 59FIFTY Fitteds.</p>
+                </div>
+            </div>
+        </a>    
+
+        </div>
+
+        <div class="greenfn2" id="greenfn2">
+            <div  data-aos="fade-up" data-aos-duration="1000" class="seccion3">
+                <a href="shop.html">
+                    <div class="s1"><img src="//www.neweracap.com/cdn/shop/files/MULTI24_VarietyPcK_HomePage_frames_Carousel_NBA_800x1000_b2c2fa20-1487-4dec-84aa-a8a10c755c20.jpg?v=1711543852&amp;width=800" alt="Shop Just Caps Variety Pack" srcset="//www.neweracap.com/cdn/shop/files/MULTI24_VarietyPcK_HomePage_frames_Carousel_NBA_800x1000_b2c2fa20-1487-4dec-84aa-a8a10c755c20.jpg?v=1711543852&amp;width=352 352w, //www.neweracap.com/cdn/shop/files/MULTI24_VarietyPcK_HomePage_frames_Carousel_NBA_800x1000_b2c2fa20-1487-4dec-84aa-a8a10c755c20.jpg?v=1711543852&amp;width=400 400w" width="400" height="500" loading="lazy" class="slider_by_league__card__img" format="pjpg">
+                </a>
+                <p class="titcarta">Paquete variado Just Caps</p>
+                <p class="textcarta">El paquete variado Just Caps acaba de lanzarse.<br> ¡Consigue equipos selectos de la NBA en una <br> combinación de patrones y telas ahora!</p>
+            </div>
+
+                <div class="s2">
+                <a href="shop.html">
+                    <img src="//www.neweracap.com/cdn/shop/files/NCAA24_CollegeHeadwear_HomePage_framesCarousel_800x1000_1c24c921-e6ee-4445-b2b4-834becce9732.jpg?v=1710854772&amp;width=800" alt="Shop your favorite college teams" srcset="//www.neweracap.com/cdn/shop/files/NCAA24_CollegeHeadwear_HomePage_framesCarousel_800x1000_1c24c921-e6ee-4445-b2b4-834becce9732.jpg?v=1710854772&amp;width=352 352w, //www.neweracap.com/cdn/shop/files/NCAA24_CollegeHeadwear_HomePage_framesCarousel_800x1000_1c24c921-e6ee-4445-b2b4-834becce9732.jpg?v=1710854772&amp;width=400 400w" width="400" height="500" loading="lazy" class="slider_by_league__card__img" format="pjpg">
+                </a>
+                <p class="titcarta">Baloncesto universitario</p> 
+                <p class="textcarta"> ¡Es hora del torneo! Prepárate para el camino <br> a la gloria con tu
+                    equipos favoritos de la NCAA. </p>   
+            </div>
+
+                <div class="s3">
+                <a href="shop.html">    
+                    <img src="//www.neweracap.com/cdn/shop/files/NEC_NBA24_Sizzling_Streak_HomePage_framesCarousel_800x1000_a277d3e8-8a88-499c-8d80-9a9f1e6adbea.jpg?v=1710419924&amp;width=800" alt="Shop the NBA Sizzling Streak Collection" srcset="//www.neweracap.com/cdn/shop/files/NEC_NBA24_Sizzling_Streak_HomePage_framesCarousel_800x1000_a277d3e8-8a88-499c-8d80-9a9f1e6adbea.jpg?v=1710419924&amp;width=352 352w, //www.neweracap.com/cdn/shop/files/NEC_NBA24_Sizzling_Streak_HomePage_framesCarousel_800x1000_a277d3e8-8a88-499c-8d80-9a9f1e6adbea.jpg?v=1710419924&amp;width=400 400w" width="400" height="500" loading="lazy" class="slider_by_league__card__img" format="pjpg">
+                </a>
+                <p class="titcarta">Racha candente de la NBA</p>
+                <p class="textcarta">Alimenta el fuego dentro y fuera de la cancha con los <br> nuevos 9FIFTY  Snapbacks, ahora disponibles en <br> equipos selectos de la NBA.</p>
+            </div>
+
+                <div class="s4">
+                <a href="shop.html">
+                    <img src="//www.neweracap.com/cdn/shop/files/MULTI24_Q1LogoSelect_HomePage_frames_Carousel_800x1000_35ca80a6-ff30-440f-aa8a-246f8ce79650.jpg?v=1709058715&amp;width=800" alt="Shop the Gray Logo Select Collection in select NBA teams" srcset="//www.neweracap.com/cdn/shop/files/MULTI24_Q1LogoSelect_HomePage_frames_Carousel_800x1000_35ca80a6-ff30-440f-aa8a-246f8ce79650.jpg?v=1709058715&amp;width=352 352w, //www.neweracap.com/cdn/shop/files/MULTI24_Q1LogoSelect_HomePage_frames_Carousel_800x1000_35ca80a6-ff30-440f-aa8a-246f8ce79650.jpg?v=1709058715&amp;width=400 400w" width="400" height="500" loading="lazy" class="slider_by_league__card__img" format="pjpg">
+                </a>
+                <p class="titcarta">Selección de logotipo gris</p>
+                <p class="textcarta">Disfrute de la última colección de Logo Select. <br> Equipos  seleccionados visten ropa gris y  59FIFTY <br> Heather  Pinstripe.</p>
+                </div>
+            </div>
+        </a>    
+
+        </div>
+
+        <div class="greenfn3" id="greenfn3">
+            <div  data-aos="fade-up" data-aos-duration="1000" class="seccion3">
+                <a href="shop3.html">
+                    <div class="s1"><img src="//www.neweracap.com/cdn/shop/files/MULTI24_VarietyPcK_HomePage_frames_Carousel_NFL_800x1000_4831a814-4c01-4fee-8c98-5165559c18b4.jpg?v=1711543783&amp;width=800" alt="Shop Just Caps Variety Pack" srcset="//www.neweracap.com/cdn/shop/files/MULTI24_VarietyPcK_HomePage_frames_Carousel_NFL_800x1000_4831a814-4c01-4fee-8c98-5165559c18b4.jpg?v=1711543783&amp;width=352 352w, //www.neweracap.com/cdn/shop/files/MULTI24_VarietyPcK_HomePage_frames_Carousel_NFL_800x1000_4831a814-4c01-4fee-8c98-5165559c18b4.jpg?v=1711543783&amp;width=400 400w" width="400" height="500" loading="lazy" class="slider_by_league__card__img" format="pjpg">
+                </a>
+                <p class="titcarta">Paquete variado Just Caps</p>
+                <p class="textcarta">El paquete variado Just Caps acaba de lanzarse. <br> ¡Consigue equipos selectos de la NFL en una <br> combinación de patrones y telas ahora!</p>
+            </div>
+
+                <div class="s2">
+                <a href="shop3.html">`
+                    <img src="//www.neweracap.com/cdn/shop/files/NFL24_Active_HomePage_framesCarousel_800x1000_fe64f9bc-dd1d-4ba1-b5e8-9bbe15f7321d.jpg?v=1709733833&amp;width=800" alt="Shop the NFL Active collection in select teams" srcset="//www.neweracap.com/cdn/shop/files/NFL24_Active_HomePage_framesCarousel_800x1000_fe64f9bc-dd1d-4ba1-b5e8-9bbe15f7321d.jpg?v=1709733833&amp;width=352 352w, //www.neweracap.com/cdn/shop/files/NFL24_Active_HomePage_framesCarousel_800x1000_fe64f9bc-dd1d-4ba1-b5e8-9bbe15f7321d.jpg?v=1709733833&amp;width=400 400w" width="400" height="500" loading="lazy" class="slider_by_league__card__img" format="pjpg">
+                </a>
+                <p class="titcarta">NFL activa</p> 
+                <p class="textcarta">Gorros de alto rendimiento para tu próximo <br> entrenamiento. Elige equipos selectos de la <br> NFL en 39THIRTY y 59FIFTY. </p>   
+            </div>
+
+                <div class="s3">
+                <a href="shop3.html">    
+                    <img src="//www.neweracap.com/cdn/shop/files/NFL24_Paisely_HomePage_frames_carousel_800x1000_45398e76-ff90-413e-843d-895db1ddebcb.jpg?v=1709136337&amp;width=800" alt="League Card background image" srcset="//www.neweracap.com/cdn/shop/files/NFL24_Paisely_HomePage_frames_carousel_800x1000_45398e76-ff90-413e-843d-895db1ddebcb.jpg?v=1709136337&amp;width=352 352w, //www.neweracap.com/cdn/shop/files/NFL24_Paisely_HomePage_frames_carousel_800x1000_45398e76-ff90-413e-843d-895db1ddebcb.jpg?v=1709136337&amp;width=400 400w" width="400" height="500" loading="lazy" class="slider_by_league__card__img" format="pjpg">
+                </a>
+                <p class="titcarta"> Parche de cachemira NFL </p>
+                <p class="textcarta">Haz una declaración con estampado paisley en toda <br> la prenda, llamativas marcas del equipo y un toque <br> de visera verde. </p>
+            </div>
+
+                <div class="s4">
+                <a href="shop3.html">
+                    <img src="//www.neweracap.com/cdn/shop/files/NFL24_Originals_HomePage_framesCarousel_800x1000_65a7ea32-f9e5-4ebf-9488-725454cb86a8.jpg?v=1708523954&amp;width=800" alt="Shop the NFL Originals collection in select teams" srcset="//www.neweracap.com/cdn/shop/files/NFL24_Originals_HomePage_framesCarousel_800x1000_65a7ea32-f9e5-4ebf-9488-725454cb86a8.jpg?v=1708523954&amp;width=352 352w, //www.neweracap.com/cdn/shop/files/NFL24_Originals_HomePage_framesCarousel_800x1000_65a7ea32-f9e5-4ebf-9488-725454cb86a8.jpg?v=1708523954&amp;width=400 400w" width="400" height="500" loading="lazy" class="slider_by_league__card__img" format="pjpg">
+                </a>
+                <p class="titcarta">Originales de la NFL</p>
+                <p class="textcarta">Consigue un estilo vintage con telas desgastadas <br> y logotipos retro de los 90.</p>
+                </div>
+            </div>
+        </a>    
+
+        </div>
+
+        <div class="izq" id="izq">
+            <img class="ari" src="img/arrowizq.png" alt="">
+        </div>
+
+        <div class="der" id="der">
+            <img class="ard" src="img/arrowder.png" alt="">
+        </div>
+
+        <div class="seccion4">
+            <p class="dest">Destacados</p>
+            <a href="shop2.html">
+                <div class="tiendaboton"><p style="color: #000000;">Tienda</p></div>
+            </a>
+
+            <div data-aos="fade-up" data-aos-duration="1000" class="contp" id="contp1">
+                    <a href="pro4.html">
+                    <div class="pr1">
+                        <hr class="linea1">
+                        <img class="pri1" srcset="//www.neweracap.com/cdn/shop/files/60462286_GOLFER_GLFERTHROWACK17599_HOUAST_CHW_3QR.png?v=1710190275 w" sizes="100vw" src="//www.neweracap.com/cdn/shop/files/60462286_GOLFER_GLFERTHROWACK17599_HOUAST_CHW_3QR_1500x.png?v=1710190275" loading="lazy" alt="Houston Astros Throwback Corduroy Golfer" width="370">
+                        <p class="ne">Houston Astros</p>
+                    </a>
+                        <p class="ne2">Throwback Corduory Golfer</p>
+                        <p class="ne3">$38.90</p>
+                    </div>
+                   
+                    
+                    <div class="pr2">
+                        <hr class="linea1">
+                        <img class="pri2" srcset="//www.neweracap.com/cdn/shop/files/60462367_GOLFER_GLFERTHROWACK17599_DENNUG_CHW_3QR.png?v=1710193853 w" sizes="100vw" src="//www.neweracap.com/cdn/shop/files/60462367_GOLFER_GLFERTHROWACK17599_DENNUG_CHW_3QR_1500x.png?v=1710193853" loading="lazy" alt="Denver Nuggets Throwback Corduroy Golfer" width="370">
+                        <p class="ne">Denver Nuggets</p>
+                        <p class="ne2">Throwback Corduory Golfer</p>
+                        <p class="ne3">$38.90</p>
+                    </div>
+                    <div class="pr3">
+                        <hr class="linea1">
+                        <img class="pri3" srcset="//www.neweracap.com/cdn/shop/files/60462295_GOLFER_GLFERTHROWACK17599_ATLBRA_CHW_3QR.png?v=1710193829 w" sizes="100vw" src="//www.neweracap.com/cdn/shop/files/60462295_GOLFER_GLFERTHROWACK17599_ATLBRA_CHW_3QR_1500x.png?v=1710193829" loading="lazy" alt="Atlanta Braves Throwback Corduroy Golfer" width="370">
+                        <p class="ne">Atlanta Braves</p>
+                        <p class="ne2">Throwback Corduory Golfer</p>
+                        <p class="ne3">$38.90</p>
+                    </div>
+                    <div class="pr1">
+                        <hr class="linea1">
+                        <img src="img/gazul.png" class="pri7" alt="">
+                        <p class="ne">Philadelphia Phillies</p>
+                        <p class="ne2">Throwback Mesh 59FIFTY Fitted</p>
+                        <p class="ne8">$43.99</p>
+                    </div>
+                    <div class="pr2">
+                        <hr class="linea1">
+                        <img class="pri2" srcset="//www.neweracap.com/cdn/shop/files/60462367_GOLFER_GLFERTHROWACK17599_DENNUG_CHW_3QR.png?v=1710193853 w" sizes="100vw" src="//www.neweracap.com/cdn/shop/files/60462367_GOLFER_GLFERTHROWACK17599_DENNUG_CHW_3QR_1500x.png?v=1710193853" loading="lazy" alt="Denver Nuggets Throwback Corduroy Golfer" width="370">
+                        <p class="ne">Denver Nuggets</p>
+                        <p class="ne2">Throwback Corduory Golfer</p>
+                        <p class="ne3">$38.90</p>
+                    </div>
+                    <div class="pr3">
+                        <hr class="linea1">
+                        <img class="pri3" srcset="//www.neweracap.com/cdn/shop/files/60462295_GOLFER_GLFERTHROWACK17599_ATLBRA_CHW_3QR.png?v=1710193829 w" sizes="100vw" src="//www.neweracap.com/cdn/shop/files/60462295_GOLFER_GLFERTHROWACK17599_ATLBRA_CHW_3QR_1500x.png?v=1710193829" loading="lazy" alt="Atlanta Braves Throwback Corduroy Golfer" width="370">
+                        <p class="ne">Atlanta Braves</p>
+                        <p class="ne2">Throwback Corduory Golfer</p>
+                        <p class="ne3">$38.90</p>
+                    </div>
+           </div>
+
+           <hr class="lineafooter">
+        </div>
+        </main>
+
+    <footer>
+        <div class="quienes">
+        </div>
+
+        <div class="apps">
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <svg class="imgfooter" stroke="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="192" height="192" viewBox="0,0,256,256" style="fill:#4a4a4a;">
+                    <g fill="#47474" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                        <g transform="scale(10.66667,10.66667)">
+                            <path  class="path1" d="M8,3c-2.757,0 -5,2.243 -5,5v8c0,2.757 2.243,5 5,5h8c2.757,0 5,-2.243 5,-5v-8c0,-2.757 -2.243,-5 -5,-5zM8,5h8c1.654,0 3,1.346 3,3v8c0,1.654 -1.346,3 -3,3h-8c-1.654,0 -3,-1.346 -3,-3v-8c0,-1.654 1.346,-3 3,-3zM17,6c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM12,7c-2.757,0 -5,2.243 -5,5c0,2.757 2.243,5 5,5c2.757,0 5,-2.243 5,-5c0,-2.757 -2.243,-5 -5,-5zM12,9c1.654,0 3,1.346 3,3c0,1.654 -1.346,3 -3,3c-1.654,0 -3,-1.346 -3,-3c0,-1.654 1.346,-3 3,-3z"></path>
+                            
+                        </g>
+                    </g>
+                </svg>
+            </a>
+
+            <a href="https://www.facebook.com/?locale=es_LA">
+                <svg class="imgfooter" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150" height="150" viewBox="0,0,256,256"
+                    style="fill:#3c3c3c;">
+                    <g fill="#474747" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                        <g transform="scale(5.12,5.12)">
+                            <path
+                            class="path1"
+                                d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+
+            <a href="https://twitter.com/home?lang=es">
+                <svg class="imgfooter" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150" height="150" viewBox="0,0,256,256"
+                    style="fill:#000000;">
+                    <g fill="#474747" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                        <g transform="scale(5.12,5.12)">
+                            <path
+                            class="path1"
+                                d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+
+            <a href="https://www.tiktok.com/">
+                <svg class="imgfooter" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24"
+                    style="fill: rgba(71, 71, 71, 1);">
+                    <path
+                    class="path1"
+                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z">
+                    </path>
+                </svg>
+            </a>
+        </div>    
+        <img class="logo2" src="img/logo.png" alt="">
+        <p class="arroba">@Briffs 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+   
+</body>
+</html>

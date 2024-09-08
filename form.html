@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briffs</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <button id="menu1">
+                <img class="menu1" src="img/menu.png" alt="">
+            </button>
+
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="">
+            </a>
+
+            <a href="form.html">
+                <img class="user" src="img/user.png" alt="">
+                <div class="preuser"></div>
+            </a>
+
+            
+            <input class="search" type="text" placeholder="Buscar">
+            <img class="sea" src="img/search.png" alt="">
+
+            <div class="container-icon">
+                <div class="container-cart-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="White"
+                    class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                  </svg>
+                  <div class="count-products">
+                    <span id="contador-productos">0</span>
+                  </div>
+                </div>
+        </div>
+    </header>
+
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="shop.html">Tienda</a></li>
+            <li><a href="mision.html">Sobre nosostros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="lil"><a style="color: #101010e0;" href="#">.</a></li>
+            <li class="lil"><a style="color: #101010e0;" href="#">.</a></li>
+            <li class="lil"><a style="color: #101010e0;" href="#">.</a></li>
+        </ul>
+
+        <form action="" method="get" onsubmit="verificarCampos(event)">
+            <div class="divi">
+                <h2 id="tit" class="tit">Crear cuenta</h2>
+                <h4 class="huno">Correo electronico</h4>
+                <input id="Inp1" class="inp1" type="text" name="ingresa tu correo">
+                    <br>
+                <h4 class="hdos">Contraseña</h4>
+                <input id="Inp2" class="inp2" type="password" name="ingresa tu contra">
+                    <br>
+                <h4 class="htres">Repite la contraseña</h4>
+                <input id="Inp3" class="inp3" type="password" name="ingresa tu contra">
+                    <br>
+                <h4 class="ced">Numero de telefono</h4>
+                <input id="cedula" class="cedula" type="number" name="ingresa tu correo">
+
+                <input class="aceptar" type="checkbox"> 
+                <p class="terminos">aceptar terminos y condiciones</p>
+                
+                <a href="index.html">
+                    <button style="color: aliceblue;" id="bot" type="submit" class="bot">Enviar</button> 
+                </a>
+            </div>
+        </form>
+
+            <a class="olvidado" style="color: rgb(0, 64, 255);" href="https://www.youtube.com/watch?v=D4ZB56fL3dI">¿Has olvidado tu contraseña?</a>
+
+    <script>
+    function verificarCampos(event) {
+    let correo = document.getElementById('Inp1').value;
+    let contraseña = document.getElementById('Inp2').value;
+    let contraseña2 = document.getElementById('Inp3').value;
+    let cedula = document.getElementById('cedula').value;
+    let valiCorreo = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    if (correo === '' || contraseña === '' || cedula === '') {
+        alert('Debes llenar todos los campos.');
+        event.preventDefault();
+        return false;
+    } else if (!valiCorreo.test(correo)) { // Aquí se añade la validación del correo
+        alert('El formato del correo electrónico no es válido.');
+        event.preventDefault();
+        return false;
+    } else if (contraseña !== contraseña2) {
+        alert('Las contraseñas no son iguales.');
+        event.preventDefault(); 
+        return false;
+    } else if (contraseña.length < 3) {
+        alert("Escribe una contraseña más larga");
+        event.preventDefault(); 
+        return false;
+    } else if (cedula.trim().length < 10 || cedula.trim().length > 10) {
+        alert("El numero de teléfono debe de tener 10 caracteres.");
+        event.preventDefault();
+        return false;
+    }
+    }
+
+    $(document).ready(function () {
+    $("#menu1").click(function () {
+
+        $("#menu").toggle(
+        );
+
+    })
+
+    });
+    </script>
+    <script src="practicarjs.js"></script>
+</body>
+</html

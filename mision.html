@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <title>Briffs</title>
+    <link rel="stylesheet" href="css/mision.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <button id="menu1">
+                <img class="menu1" src="img/menu.png" alt="">
+            </button>
+
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="">
+            </a>
+
+            <a href="form.html">
+                <img class="user" src="img/user.png" alt="">
+                <div class="preuser"></div>
+            </a>
+
+            <input class="search" type="text" placeholder="Buscar">
+            <img class="sea" src="img/search.png" alt="">
+
+            <div class="container-icon">
+                <div class="container-cart-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="White"
+                    class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                  </svg>
+                  <div class="count-products">
+                    <span id="contador-productos">0</span>
+                  </div>
+                </div>
+            </div>
+    </header>
+
+    <main>
+
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="shop.html">Tienda</a></li>
+            <li><a href="mision.html">Sobre nosostros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="lil"><a style="color: #101010e0;" href="#">.</a></li>
+            <li class="lil"><a style="color: #101010e0;" href="#">.</a></li>
+            <li class="lil"><a style="color: #101010e0;" href="#">.</a></li>
+        </ul>
+
+    <!--mision, vision y valores-->
+ 
+    
+<div class="container-card">
+	
+<div class="card">
+	
+		<img class="banner_img_with_collection__item__img" src="//www.neweracap.com/cdn/shop/files/MULTI24_CourtSport_HomePage_frames_Full_Bleed_Desktop_TennisClub_1440x1270_75735c6b-1ab3-46d9-8b1e-57689dd198f5.jpg?v=1711373821&amp;width=1280" alt="Shop the New Era Tennis Club collection" loading="lazy" width="1280" height="full">
+	
+	<div class="contenido-card">
+		<h3>Misión</h3>
+		<p>Briffs se compromete a ofrecer a nuestros clientes una amplia selección de gorras de alta calidad que reflejen su estilo y personalidad.</p>
+		<button class="botonpopup" onclick="mostrarPopup()">Leer Más</button>
+	</div>
+</div>
+<div class="card">
+    
+    <img class="banner_img_with_collection__item__img" src="//www.neweracap.com/cdn/shop/files/LIF24_LAD_Undefeated_HomePage_framesFull_Bleed_Desktop_1440x1270_d29533e5-3b86-4012-b827-ec5b6e9461e4.jpg?v=1711723058&amp;width=1280" alt="New Era Cap" loading="lazy" width="1280" height="full">
+
+	<div class="contenido-card">
+		<h3>Visión</h3>
+		<p>En Briffs, aspiramos a ser reconocidos como líderes en el mercado de gorras, destacándonos por nuestra innovación y calidad. </p>
+		<button class="botonpopup" onclick="mostrarPopup2()" >Leer Más</button>
+	</div>
+</div>
+<div class="card">
+	
+    <img class="banner_img_with_collection__item__img" src="//www.neweracap.com/cdn/shop/files/NFL24_Draft_HomePage_frames_Full_Bleed_Desktop_1440x1270_b69f0bd5-45c3-4ace-a2f3-b308393dbc94.jpg?v=1711458425&amp;width=1280" alt="New Era Cap" loading="lazy" width="1280" height="full">
+	<div class="contenido-card">
+		<h3>Valores</h3>
+		<p>Pasión por la moda: Nos apasiona la moda y nos esforzamos por ofrecer gorras que reflejen las últimas tendencias y estilos.</p>
+		<button class="botonpopup"  onclick="mostrarPopup3()">Leer Más</button>
+	</div>
+</div>
+</div>
+
+<div class="popup" id="popup1">
+    <div class="overlay"></div>
+    <div class="contenido">
+    <div class="botoncerrar" onclick="mostrarPopup()">&times;</div>
+    <h1>Misión</h1>
+    <p>Briffs se compromete a ofrecer a nuestros clientes una amplia selección de gorras de alta calidad que reflejen su estilo y personalidad. Nos esforzamos por ser el destino preferido para aquellos que buscan productos de moda que combinen diseño, comodidad y durabilidad. A través de un servicio excepcional y una experiencia de compra única, aspiramos a satisfacer las necesidades de nuestros clientes y superar sus expectativas en cada interacción.
+    </p>
+    </div>
+</div>
+
+<div class="popup" id="popup2">
+    <div class="overlay"></div>
+    <div class="contenido">
+    <div class="botoncerrar" onclick="mostrarPopup2()">&times;</div>
+    <h1>Visión</h1>
+    <p>En Briffs, aspiramos a ser reconocidos como líderes en el mercado de gorras, destacándonos por nuestra innovación, calidad y compromiso con la satisfacción del cliente. Nos esforzamos por expandir nuestra presencia global, llegando a nuevas audiencias y estableciendo alianzas estratégicas que fortalezcan nuestra posición en la industria. Buscamos ser un referente en tendencias de moda y estilo, inspirando a nuestros clientes a expresarse auténticamente a través de nuestras colecciones de gorras.
+    </p>
+    </div>
+</div>
+
+<div class="popup" id="popup3">
+    <div class="overlay"></div>
+    <div class="contenido">
+    <div class="botoncerrar" onclick="mostrarPopup3()">&times;</div>
+    <h1>Valores</h1>
+    <p>En Briffs, nuestra pasión por la moda se combina con un compromiso inquebrantable con la excelencia en el servicio al cliente, la integridad, la calidad y durabilidad de nuestros productos, la promoción de la diversidad e inclusión, así como la responsabilidad social y ambiental. Estos valores fundamentales guían todas nuestras acciones y decisiones, impulsándonos a ofrecer experiencias excepcionales a nuestros clientes.
+    </p>
+    </div>
+</div>
+    </main>
+    <script src="js/mision.js"></script>
+</body>
+</html>
