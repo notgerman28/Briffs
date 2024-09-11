@@ -1,1 +1,1 @@
-<img src="assets/trash.jpg">
+<img src="./assets/trash.jpg">
